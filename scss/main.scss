@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//fuentes
+$fuentedestacada: 'Londrina Outline', cursive;
+$fuentetitulos: 'Bebas Neue', cursive;
+$fuentebasica: 'Open Sans', sans-serif;
+
+//colores
+$colorturquesa: #03989E;
+$coloramarillo: #FDD54F;
+
+
+body{
+    background: url("../media/background.png") no-repeat fixed center;
+    background-size: 100%;
+}
+
+header{ 
+    box-shadow: 0px 10px 25px -4px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: $fuentetitulos;
+    font-size: 1.2rem;
+    .dropdown-menu{
+        font-size: 1.1rem;
+    }
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block; 
+}
+
+.main{
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .texto{
+        text-align: center;
+
+        .bienvenido{
+            font-family: $fuentetitulos;
+            font-size: 1.6rem;
+        }
+        .destacado{
+            font-family: $fuentedestacada;
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: $colorturquesa;
+        }
+        .pincel{
+            img{ 
+                width: 400px;
+            }
+        }
+    }
+    .fotoinicio{
+        img{
+            margin-left: 50px;
+            width: 450px;
+            height: 300px;
+            border-radius: 30px 30px 30px 30px;
+        }
+    }
+}
+
+
+footer{
+    margin-top: 30px;
+    background-color: $coloramarillo;
+    padding: 30px 100px 30px 100px;
+    font-family: $fuentebasica;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        margin: 0px 10px 0px 10px;
+
+        p{
+            padding-top: 5px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+        }
+    }
+}
+
+// productos
+
+.productos{
+    strong{
+        color: $colorturquesa;
+        font-family: $fuentetitulos;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+    div{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        .fotoprod img{
+            margin: 20px 0 20px 0;
+            width: 250px;
+            border-radius: 30px 30px 30px 30px;
+        }
+        .titulo{
+            font-family: $fuentetitulos;
+            color: $colorturquesa;
+            font-size: 1.4rem;
+        }
+        .descrip{
+            font-family: $fuentebasica;
+        }
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+            p{
+                font-family: $fuentetitulos;
+                font-size: 1.3rem;
+                color: $colorturquesa;
+            }
+        }
+    }
+}
