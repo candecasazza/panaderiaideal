@@ -60,11 +60,10 @@ footer {
       height: 20px;
       margin: 10px; }
 
-.productos strong {
+h1 {
   color: #03989E;
   font-family: "Bebas Neue", cursive;
   font-size: 1.6rem;
-  font-weight: lighter;
   margin-bottom: 20px; }
 
 .productos div {
@@ -95,3 +94,33 @@ footer {
       font-family: "Bebas Neue", cursive;
       font-size: 1.3rem;
       color: #03989E; }
+
+.nosotros p {
+  font-family: "Open Sans", sans-serif; }
+
+.nosotros .fotonosotros img {
+  margin: 20px 0 20px 20px;
+  width: 100%;
+  border-radius: 30px 30px 30px 30px; }
+
+.contacto .sucursal {
+  margin: 20px 0 20px 0; }
+  .contacto .sucursal .nombre {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: "Bebas Neue", cursive;
+    background-color: #03989E;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: right;
+    width: 15%; }
+  .contacto .sucursal .datossucursal {
+    width: 80%;
+    padding-left: 20px; }
+
+.novedades {
+  font-family: "Open Sans", sans-serif; }
+  .novedades .card-title {
+    color: #03989E;
+    font-weight: bold; }

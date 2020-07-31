@@ -93,16 +93,18 @@ footer{
     }
 }
 
+h1{
+    color: $colorturquesa;
+    font-family: $fuentetitulos;
+    font-size: 1.6rem;
+    //font-weight: lighter;
+    margin-bottom: 20px;
+}
+
 // productos
 
 .productos{
-    strong{
-        color: $colorturquesa;
-        font-family: $fuentetitulos;
-        font-size: 1.6rem;
-        font-weight: lighter;
-        margin-bottom: 20px;
-    }
+  
     div{
         display: flex;
         flex-flow: column nowrap;
@@ -141,4 +143,53 @@ footer{
             }
         }
     }
+}
+
+//nosotros
+
+.nosotros{
+    p{
+        font-family: $fuentebasica;
+    }
+    .fotonosotros img{
+        margin: 20px 0 20px 20px;
+        width: 100%;
+        border-radius: 30px 30px 30px 30px;
+    }
+}
+
+//contacto
+
+.contacto{
+    .sucursal{
+        margin: 20px 0 20px 0;
+        .nombre{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            font-family: $fuentetitulos;
+            background-color: $colorturquesa;
+            color: white;
+            font-weight: bolder;
+            font-size: 3rem;
+            text-align: right;
+            width: 15%;
+            
+        }
+
+       .datossucursal{
+           width: 80%;
+           padding-left: 20px;
+       }
+    }
+}
+
+//novedades
+
+.novedades{
+    font-family: $fuentebasica;
+    .card-title{
+        color: $colorturquesa;
+        font-weight: bold;
+    }
+    
 }
