@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: whitesmoke;
+  background: white;
   background-size: 100%; }
 
 header {
@@ -19,23 +19,7 @@ header {
   display: block; }
 
 .main {
-  padding: 50px 100px 50px 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .main .texto {
-    text-align: center;
-    margin-bottom: 30px; }
-    .main .texto .bienvenido {
-      font-family: "Bebas Neue", cursive;
-      font-size: 1.6rem; }
-    .main .texto .destacado {
-      font-family: "Londrina Outline", cursive;
-      font-size: 4.5rem;
-      font-weight: bold;
-      color: #03989E; }
-    .main .texto .pincel img {
-      width: 400px; }
+  padding: 50px 100px 50px 100px; }
   .main .fotoinicio img {
     width: 450px;
     height: 300px;

@@ -15,7 +15,7 @@ $coloramarillo: #FDD54F;
 
 
 body{
-    background: whitesmoke;
+    background: white;
     background-size: 100%;
 }
 
@@ -35,30 +35,7 @@ header{
 
 .main{
     padding: 50px 100px 50px 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .texto{
-        text-align: center;
-        margin-bottom: 30px;
-        
-        .bienvenido{
-            font-family: $fuentetitulos;
-            font-size: 1.6rem;
-        }
-        .destacado{
-            font-family: $fuentedestacada;
-            font-size: 4.5rem;
-            font-weight: bold;
-            color: $colorturquesa;
-        }
-        .pincel{
-            img{ 
-                width: 400px;
-            }
-        }
-    }
+    
     .fotoinicio{
         img{
             width: 450px;
