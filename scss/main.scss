@@ -15,14 +15,13 @@ $coloramarillo: #FDD54F;
 
 
 body{
-    background: url("../media/background.png") no-repeat fixed center;
+    background: whitesmoke;
     background-size: 100%;
 }
 
 header{ 
     box-shadow: 0px 10px 25px -4px rgba(0,0,0,0.75);
     margin-bottom: 30px;
-    width: 100%;
     font-family: $fuentetitulos;
     font-size: 1.2rem;
     .dropdown-menu{
@@ -42,7 +41,8 @@ header{
 
     .texto{
         text-align: center;
-
+        margin-bottom: 30px;
+        
         .bienvenido{
             font-family: $fuentetitulos;
             font-size: 1.6rem;
@@ -61,7 +61,6 @@ header{
     }
     .fotoinicio{
         img{
-            margin-left: 50px;
             width: 450px;
             height: 300px;
             border-radius: 30px 30px 30px 30px;
@@ -77,6 +76,7 @@ footer{
     font-family: $fuentebasica;
     font-size: 0.9rem;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     div{
@@ -131,16 +131,14 @@ h1{
             align-items: flex-start;
             justify-content: space-evenly;
             
-            ul{
-                li{
-                    list-style-type: none;
+
+            .card .card-body{
+                .card-title{
+                    font-family: $fuentetitulos;
+                    font-size: 1.3rem;
+                    color: $colorturquesa;
                 }
-            }
-            p{
-                font-family: $fuentetitulos;
-                font-size: 1.3rem;
-                color: $colorturquesa;
-            }
+            } 
         }
     }
 }
@@ -170,10 +168,10 @@ h1{
             background-color: $colorturquesa;
             color: white;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             text-align: right;
-            width: 15%;
-            
+            width: 3.5rem;
+            padding-top: 10px;
         }
 
        .datossucursal{

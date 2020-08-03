@@ -4,13 +4,12 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../media/background.png") no-repeat fixed center;
+  background: whitesmoke;
   background-size: 100%; }
 
 header {
   box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.75);
   margin-bottom: 30px;
-  width: 100%;
   font-family: "Bebas Neue", cursive;
   font-size: 1.2rem; }
   header .dropdown-menu {
@@ -25,7 +24,8 @@ header {
   justify-content: space-around;
   align-items: center; }
   .main .texto {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
     .main .texto .bienvenido {
       font-family: "Bebas Neue", cursive;
       font-size: 1.6rem; }
@@ -37,7 +37,6 @@ header {
     .main .texto .pincel img {
       width: 400px; }
   .main .fotoinicio img {
-    margin-left: 50px;
     width: 450px;
     height: 300px;
     border-radius: 30px 30px 30px 30px; }
@@ -49,6 +48,7 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center; }
   footer div {
@@ -88,9 +88,7 @@ h1 {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-evenly; }
-    .productos div .menu ul li {
-      list-style-type: none; }
-    .productos div .menu p {
+    .productos div .menu .card .card-body .card-title {
       font-family: "Bebas Neue", cursive;
       font-size: 1.3rem;
       color: #03989E; }
@@ -112,9 +110,10 @@ h1 {
     background-color: #03989E;
     color: white;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: right;
-    width: 15%; }
+    width: 3.5rem;
+    padding-top: 10px; }
   .contacto .sucursal .datossucursal {
     width: 80%;
     padding-left: 20px; }
