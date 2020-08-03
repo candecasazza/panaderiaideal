@@ -125,19 +125,16 @@ h1{
             font-family: $fuentebasica;
         }
         .menu{
-            width: 100%;
             display: flex;
-            flex-flow: row nowrap;
+            justify-content: space-between;
+            flex-flow: row wrap;
             align-items: flex-start;
-            justify-content: space-evenly;
-            
 
-            .card .card-body{
-                .card-title{
-                    font-family: $fuentetitulos;
-                    font-size: 1.3rem;
-                    color: $colorturquesa;
-                }
+            .card .card-body .card-title{
+                font-family: $fuentetitulos;
+                font-size: 1.3rem;
+                color: $colorturquesa;
+            
             } 
         }
     }
