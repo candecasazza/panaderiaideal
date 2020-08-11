@@ -3,13 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background: white;
-  background-size: 100%; }
-
 header {
-  box-shadow: 0px 10px 25px -4px rgba(0, 0, 0, 0.75);
-  margin-bottom: 30px;
   font-family: "Bebas Neue", cursive;
   font-size: 1.2rem; }
   header .dropdown-menu {
@@ -19,36 +13,56 @@ header {
   display: block; }
 
 .main {
-  padding: 50px 100px 50px 100px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 150px 0 0 0; }
+  .main .texto img {
+    width: 100%; }
   .main .fotoinicio img {
-    width: 450px;
-    height: 300px;
     border-radius: 30px 30px 30px 30px; }
 
 footer {
   margin-top: 30px;
   background-color: #FDD54F;
-  padding: 30px 100px 30px 100px;
+  padding: 30px 80px 30px 80px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center; }
-  footer div {
-    margin: 0px 10px 0px 10px; }
-    footer div p {
-      padding-top: 5px; }
-    footer div img {
-      width: 20px;
-      height: 20px;
-      margin: 10px; }
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  footer #footer__item {
+    display: flex;
+    flex-flow: row nowrap; }
+    footer #footer__item div {
+      margin-right: 5px; }
 
 h1 {
   color: #03989E;
   font-family: "Bebas Neue", cursive;
   font-size: 1.6rem;
   margin-bottom: 20px; }
+
+.galeria {
+  margin: 30px 0 30px 0; }
+  .galeria .galeria__item .galeria__item__titulo {
+    margin: 10px 0 10px 0;
+    padding: 0 10px 0 10px;
+    background-color: #FDD54F;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    height: 4rem;
+    text-align: center; }
+    .galeria .galeria__item .galeria__item__titulo a {
+      font-family: "Londrina Outline", cursive;
+      font-size: 1.5rem; }
+  .galeria .galeria__item .galeria__item__foto {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 250px; }
 
 .productos div {
   display: flex;
@@ -76,11 +90,13 @@ h1 {
       font-size: 1.3rem;
       color: #03989E; }
 
-.nosotros p {
-  font-family: "Open Sans", sans-serif; }
+.nosotros .nosotros__texto {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.nosotros .fotonosotros img {
-  margin: 20px 0 20px 20px;
+.nosotros .nosotros__foto img {
   width: 100%;
   border-radius: 30px 30px 30px 30px; }
 
@@ -99,7 +115,7 @@ h1 {
     padding-top: 10px; }
   .contacto .sucursal .datossucursal {
     width: 80%;
-    padding-left: 20px; }
+    margin-left: 20px; }
 
 .novedades {
   font-family: "Open Sans", sans-serif; }

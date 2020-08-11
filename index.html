@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Ideal | Panadería y Confitería</title>
 	<meta name="description" content="Panadería y Confitería en Valentín Alsina, Lanús Oeste">
-	<meta name="keywords"  content="Panadería, Confitería, Facturas, Medialunas, Sandwiches de miga, Catering, Lanús, Valentín Alsina">
+	<meta name="keywords"  content="Ideal, Panadería, Confitería, Facturas, Medialunas, Sandwiches de miga, Catering, Lanús, Valentín Alsina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/logo-solo-transparente.png" type="image/png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -13,9 +13,9 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<nav class="navbar fixed-top shadow rounded navbar-expand-md navbar-light bg-light">
 			<a class="navbar-brand" href="index.html">
-				<img src="media/logo-transparente.png" width="100" height="100" alt="logo" loading="lazy">
+				<img src="media/logo-transparente.png" width="80" height="80" alt="logo" loading="lazy">
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -59,33 +59,85 @@
 
 	</header>
 	
-    <section class="main row">
-        <div class="texto col-lg-6 col-md-12 col-sm-12">
-            <img class="img-fluid" src="media/bienvenido.png" alt="bienvenido">
-        </div>
-        <div class="fotoinicio col-lg-6 col-md-12 col-sm-12">
-            <img class="img-fluid" src="media/fotoinicio.jpeg" alt="pan">
-        </div>
-	</section>
-	
+	<div class="container-fluid">
+		<section class="main">
+			<div class="row">
+				<div class="texto col-lg-6 col-md-12 col-sm-12">
+					<img class="img-fluid" src="media/bienvenido.png" style="width: 100%; max-width: 500px;" alt="bienvenido">
+				</div>
+				<div class="fotoinicio col-lg-6 col-md-12 col-sm-12">
+					<img class="img-fluid" src="media/fotoinicio.jpeg" style="width: 100%; max-width: 500px;" alt="pan">
+				</div>
+			</div>
+		</section>
+	</div>
 
-    <footer class="row">
-        <div class="row col-lg-6 col-md-6 col-sm-12">
-            <img src="media/iconos/icon-place.png" alt="place">
-            <p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
-        </div>
-		<div class="row col-lg-6 col-md-6 col-sm-12">
-            <img src="media/iconos/icon-mail.png" alt="mail">
-            <p>panaderiaideal@gmail.com</p>
-        </div>
-		<div class="row col-lg-6 col-md-6 col-sm-12">
-            <img src="media/iconos/icon-phone.png" alt="phone">
-            <p>(011) 7396-9100</p>
-        </div>
-		<div class="row col-lg-6 col-md-6 col-sm-12">
-            <img src="media/iconos/icon-clock.png" alt="clock">
-            <p>Martes a Domingos de 7:30 a 20:30 hs.</p>
-        </div>
+	<div class="container-fluid">
+		<div class="row galeria">
+			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
+				<div class="galeria__item__titulo">
+					¡No te pierdas nuestras <a href="novedades.html" class="alert-link">Novedades</a>!
+				</div>
+
+				<div class="galeria__item__foto">
+					<img src="media/galeria/sandwiches.png" class="d-block w-100 h-100" alt="galeria">
+				</div>
+				<div class="galeria__item__foto">
+					<img src="media/galeria/pan1.jpg" class="d-block w-100 h-100" alt="galeria">
+				</div>
+					
+			</div>
+
+			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
+				<div class="galeria__item__titulo">
+					Mirá todos los <a href="productos.html" class="alert-link">Productos</a> que tenemos para vos.
+				</div>
+
+				<div class="galeria__item__foto">
+					<img src="media/galeria/torta.jpg" class="d-block w-100 h-100" alt="galeria">
+				</div>
+				<div class="galeria__item__foto">
+					<img src="media/galeria/cookies.jpg" class="d-block w-100 h-100" alt="galeria">
+				</div>
+					
+			</div>
+
+			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
+				<div class="galeria__item__titulo">
+					Más de 60 años brindando sabor y calidad en Zona Sur. <a href="contacto.html" class="alert-link">¡Visitanos!</a>
+				</div>
+
+				<div class="galeria__item__foto">
+					<img src="media/galeria/street1.JPG" class="d-block w-100 h-100" alt="galeria">
+				</div>
+				<div class="galeria__item__foto">
+					<img src="media/galeria/street2.JPG" class="d-block w-100 h-100" alt="galeria">
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+    <footer class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
+				<div><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+				<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
+				<div><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
+				<p>panaderiaideal@gmail.com</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
+				<div><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+				<p>(011) 7396-9100</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
+				<div><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
+				<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
+			</div>
+		</div>
     </footer>
 
 

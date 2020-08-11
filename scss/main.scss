@@ -14,14 +14,7 @@ $colorturquesa: #03989E;
 $coloramarillo: #FDD54F;
 
 
-body{
-    background: white;
-    background-size: 100%;
-}
-
 header{ 
-    box-shadow: 0px 10px 25px -4px rgba(0,0,0,0.75);
-    margin-bottom: 30px;
     font-family: $fuentetitulos;
     font-size: 1.2rem;
     .dropdown-menu{
@@ -34,14 +27,16 @@ header{
 }
 
 .main{
-    padding: 50px 100px 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 150px 0 0 0;
     
-    .fotoinicio{
-        img{
-            width: 450px;
-            height: 300px;
-            border-radius: 30px 30px 30px 30px;
-        }
+    .texto img{
+        width: 100%;
+    }
+    .fotoinicio img{
+        border-radius: 30px 30px 30px 30px;
     }
 }
 
@@ -49,23 +44,20 @@ header{
 footer{
     margin-top: 30px;
     background-color: $coloramarillo;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 80px 30px 80px;
     font-family: $fuentebasica;
     font-size: 0.9rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    div{
-        margin: 0px 10px 0px 10px;
+    text-align: center;
 
-        p{
-            padding-top: 5px;
-        }
-        img{
-            width: 20px;
-            height: 20px;
-            margin: 10px;
+    #footer__item{
+        display: flex;
+        flex-flow: row nowrap;
+        div{
+            margin-right: 5px;
         }
     }
 }
@@ -74,8 +66,37 @@ h1{
     color: $colorturquesa;
     font-family: $fuentetitulos;
     font-size: 1.6rem;
-    //font-weight: lighter;
     margin-bottom: 20px;
+}
+
+//galeria
+
+.galeria{
+    margin: 30px 0 30px 0;
+    .galeria__item{
+        .galeria__item__titulo{
+            margin: 10px 0 10px 0;
+            padding: 0 10px 0 10px;
+            background-color: $coloramarillo;
+            color: white;
+            font-family: $fuentebasica;
+            font-size: 1.2rem;
+            height: 4rem;
+            text-align: center;
+            a{
+                font-family: $fuentedestacada;
+                font-size: 1.5rem;
+            }
+        }
+
+        .galeria__item__foto{
+            margin-bottom: 10px;
+            width: 100%;
+            height: 250px;
+
+        }
+        
+    }
 }
 
 // productos
@@ -120,11 +141,14 @@ h1{
 //nosotros
 
 .nosotros{
-    p{
+    .nosotros__texto{
         font-family: $fuentebasica;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .fotonosotros img{
-        margin: 20px 0 20px 20px;
+    .nosotros__foto img{
+        //margin: 20px 0 20px 20px;
         width: 100%;
         border-radius: 30px 30px 30px 30px;
     }
@@ -150,7 +174,7 @@ h1{
 
        .datossucursal{
            width: 80%;
-           padding-left: 20px;
+           margin-left: 20px;
        }
     }
 }
