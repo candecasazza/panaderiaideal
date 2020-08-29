@@ -28,21 +28,8 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown">Productos</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item"  href="productos.html">Ver todos</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#facturas">Facturas</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#panaderia">Panadería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#pasteleria">Pastelería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#salados">Salados</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#sandwiches">Sandwiches de Miga</a>
-						</div>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -61,49 +48,103 @@
 	
 	<div class="container-fluid">
 		<section class="main contacto row">
-			<h1 class="col-12">- Visitanos -</h1>
-			<div class="col-lg-6 col-md-6 col-sm-12">
+			<h1 class="col-10"><img class="img-fluid w-100" src="media/banners/contacto.png" alt="banner"></h1>
+			<div class="col-lg-10 col-md-10 col-sm-12">
 				<div class="sucursal row">
-					<div class="nombre"><p>Sucursal I</p></div>
-					<div class="datossucursal">
+					<div class="sucursal__nombre"><p>Sucursal I</p></div>
+					<div class="sucursal__datos">
 						<p>Dirección: Av. Juan Domingo Peron 2436, Valentín Alsina, Buenos Aires.</p>
 						<p>Teléfono: 011 7396-9100</p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e2e413bf7d6e4db!2sPANADER%C3%8DA%20IDEAL!5e0!3m2!1ses!2sar!4v1592800471139!5m2!1ses!2sar" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e2e413bf7d6e4db!2sPANADER%C3%8DA%20IDEAL!5e0!3m2!1ses!2sar!4v1592800471139!5m2!1ses!2sar" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12">
+			<div class="col-lg-10 col-md-10 col-sm-12">
 				<div class="sucursal row">
-					<div class="nombre"><p>Sucursal II</p></div>
-					<div class="datossucursal">
+					<div class="sucursal__nombre"><p>Sucursal II</p></div>
+					<div class="sucursal__datos">
 						<p>Dirección: Av. Remedios de Escalada de San Martín 2639, Valentín Alsina, Buenos Aires.</p>
 						<p>Teléfono: 011 4209-2298</p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a8b0ea9ceec703b!2sPanader%C3%ADa%20Confiter%C3%ADa%20Ideal!5e0!3m2!1ses!2sar!4v1592800586649!5m2!1ses!2sar" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.910316281283!2d-58.40592325!3d-34.6742053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a8b0ea9ceec703b!2sPanader%C3%ADa%20Confiter%C3%ADa%20Ideal!5e0!3m2!1ses!2sar!4v1592800586649!5m2!1ses!2sar" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12">
+				<div class="my-3 formulario-contacto">Formulario de contacto</div>
+				<form>
+					<div class="form-group">
+					  <label for="nombre">Nombre y Apellido</label>
+					  <input type="text" class="form-control" id="nombre">
+					</div>
+					
+					<div class="form-group">
+						<label for="telefono">Teléfono</label>
+						<input type="number" class="form-control" id="telefono">
+					</div>
+
+					<div class="form-group">
+						<label for="email">Correo electrónico</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+					
+					<div class="form-group">
+					  <label for="comentario">Deje su pedido o comentario</label>
+					  <textarea class="form-control" id="comentario" rows="3"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+
+				  </form>
+			</div>
+
 		</section>
 	</div>
 
     
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
-				<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="mb-3"><img style="width: 80px; height: 80px;" src="media/logo-transparente.png" alt="logo"></div>
+				<em>El secreto para lograr la <strong>calidad</strong>, la <strong>frescura</strong> y el <strong>sabor</strong> inigualable de los productos que elaboramos responde a un arte, que se transmite de generación en generación y se basa en la <strong>pasión por lo que hacemos</strong>.</em>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
-				<p>panaderiaideal@gmail.com</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal I</h5>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal II</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Contacto</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
+					<p>panaderiaideal@hotmail.com</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
+					<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
-				<p>(011) 7396-9100</p>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
-				<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
-			</div>
+			
+			
+			<div class="col-12 bg-light mt-4">© Creado con ♥ por <a href="#">Studio Casz</a></div>
 		</div>
     </footer>
 

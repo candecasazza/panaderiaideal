@@ -28,21 +28,8 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown">Productos</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item"  href="productos.html">Ver todos</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#facturas">Facturas</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#panaderia">Panadería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#pasteleria">Pastelería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#salados">Salados</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#sandwiches">Sandwiches de Miga</a>
-						</div>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -61,16 +48,16 @@
 	
 	<div class="container-fluid">
 		<section class="main productos row">
-			<h1 class="col-sm-12">- Nuestros Productos -</h1>
+			<h1 class="col-10"><img class="img-fluid w-100" src="media/banners/productos.png" alt="banner"></h1>
 			
-			<div class="col-lg-3 col-md-6 col-sm-12" id="panaderia">
+			<div class="col-lg-5 col-md-6 col-sm-12" id="panaderia">
 				<div class="fotoprod"><img src="media/pancitos.jpg" alt="pan"></div>
 				<img src="media/iconos/icon-pan.png" style="width: 40px;" alt="icono">
 				<p class="titulo">- PANIFICADOS -</p>
 				<p class="descrip">Casero, flauta, integral, figacitas de manteca y de grasa, cremonas y libritos.</p>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-12" id="facturas">
+			<div class="col-lg-5 col-md-6 col-sm-12" id="facturas">
 				<div class="fotoprod"><img src="media/medialunas2.jpg" alt="medialunas"></div>
 				<img src="media/iconos/icon-medialuna.png" style="width: 40px;" alt="icono">
 				<p class="titulo">- Facturas -</p>
@@ -78,21 +65,22 @@
 				<br>
 			</div>
 			
-			<div class="col-lg-3 col-md-6 col-sm-12" id="pasteleria">
+			<div class="col-lg-5 col-md-6 col-sm-12" id="pasteleria">
 				<div class="fotoprod"><img src="media/Tortas.png" alt="Tortas"></div>
 				<img src="media/iconos/icon-torta.png" style="width: 40px;" alt="icono">
 				<p class="titulo">- PASTELERÍA -</p>
 				<p class="descrip">Tartas dulces, porciones dulces, tortas, cookies, alfajores, masas secas, budines, bombones.</p>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-12" id="salados">
+			<div class="col-lg-5 col-md-6 col-sm-12" id="salados">
 				<div class="fotoprod"><img src="media/Prepizzas.png" alt="Salados"></div>
 				<img src="media/iconos/icon-pizza.png" style="width: 40px;" alt="icono">
 				<p class="titulo">- SALADOS -</p>
 				<p class="descrip">Empanadas, tartas, prepizzas, pizzetas, chipá, fosforitos, chips, y más.</p>
+				<br>
 			</div>
 
-			<div class="col-lg-12 col-md-12 col-sm-12" id="sandwiches">
+			<div class="col-lg-10 col-md-12 col-sm-12" id="sandwiches">
 				<div class="fotoprod"><img src="media/Sandwiches.png" alt="Sandwiches"></div>
 				<img src="media/iconos/icon-sandwich.png" style="width: 40px;" alt="icono">
 				<p class="titulo">- SANDWICHES DE MIGA -</p>
@@ -159,27 +147,67 @@
 				</div>
 			</div>
 
+			<div class="col-lg-5 col-md-6 col-sm-12" id="bombones">
+				<div class="fotoprod"><img src="media/bombones.jpeg" alt="bombones"></div>
+				<img src="media/iconos/bombones.png" style="width: 40px;" alt="icono">
+				<p class="titulo">- BOMBONES -</p>
+				<p class="descrip">Bombones artesanales, chocolate en rama, cajas personalizadas, chupetines con formas, habanitos rellenos de dulce de leche.</p>
+			</div>
+
+			<div class="col-lg-5 col-md-6 col-sm-12" id="galletitas">
+				<div class="fotoprod"><img src="media/cookies.jpg" alt="galletitas"></div>
+				<img src="media/iconos/cookie.png" style="width: 40px;" alt="icono">
+				<p class="titulo">- GALLETITAS -</p>
+				<p class="descrip">De limón, naranja, chips de chocolate, palmeritas, scones, fosforitos, yemitas de pastelera, medialunitas, y muchas más.</p>
+				
+			</div>
 		</section>
 	</div>
 	
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
-				<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="mb-3"><img style="width: 80px; height: 80px;" src="media/logo-transparente.png" alt="logo"></div>
+				<em>El secreto para lograr la <strong>calidad</strong>, la <strong>frescura</strong> y el <strong>sabor</strong> inigualable de los productos que elaboramos responde a un arte, que se transmite de generación en generación y se basa en la <strong>pasión por lo que hacemos</strong>.</em>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
-				<p>panaderiaideal@gmail.com</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal I</h5>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal II</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Contacto</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
+					<p>panaderiaideal@hotmail.com</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
+					<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
-				<p>(011) 7396-9100</p>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
-				<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
-			</div>
+			
+			
+			<div class="col-12 bg-light mt-4">© Creado con ♥ por <a href="#">Studio Casz</a></div>
 		</div>
     </footer>
 

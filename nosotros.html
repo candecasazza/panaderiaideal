@@ -28,21 +28,8 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown">Productos</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item"  href="productos.html">Ver todos</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#facturas">Facturas</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#panaderia">Panadería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#pasteleria">Pastelería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#salados">Salados</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#sandwiches">Sandwiches de Miga</a>
-						</div>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -61,36 +48,74 @@
 	
 	<div class="container-fluid">
 		<section class="main nosotros row">
-			<h1 class="col-12">- Nuestra Historia -</h1>
-			<div class="nosotros__texto col-lg-6 col-md-6 col-sm-12">
-				<p>Con más de 60 años en la zona Sur elaborando productos de Panadería, Confitería y Pastelería de gran calidad y variedad, también ofrecemos el servicio de Catering para particulares y empresas, cuidando y ampliando las variedades según las preferencias del cliente y la temporada.</p>
-				<p>Seguimos la tradición y el trabajo con las mejores materias primas que garantizan la calidad del producto final y la satisfacción del cliente. </p>
-				<p>Día a día nuestros experimentados pasteleros ponen al horno toda su dedicación y esfuerzo que combinada con la mejor atención, es la fórmula perfecta para entregar un excelente producto.</p>
+			<h1 class="col-10"><img class="img-fluid w-100" src="media/banners/nosotros.png" alt="banner"></h1>
+			<div class="nosotros__texto col-lg-5 col-md-6 col-sm-12">
+				<p>Con más de <strong>60 años</strong> en la <strong>Zona Sur</strong> elaborando productos de <strong>Panadería, Confitería y Pastelería</strong> de gran calidad y variedad, también ofrecemos el <strong>servicio de Catering</strong> para particulares y empresas, cuidando y ampliando las variedades según las preferencias del cliente y la temporada.</p>
+				<p>Seguimos la tradición y el trabajo con las mejores materias primas que garantizan la <strong>calidad</strong> del producto final y la <strong>satisfacción</strong> del cliente. </p>
 			</div>
-			<div class="nosotros__foto img-fluid col-lg-6 col-md-6 col-sm-12">
+			<div class="nosotros__foto img-fluid col-lg-5 col-md-6 col-sm-12">
 				<img src="media/street1.JPG" alt="nosotros">
 			</div>
 		</section>
 	</div>
+	<hr style="width: 300px;" class="text-center mx-auto mt-4">
+	<div class="container-fluid">
+		<div class="main nosotros nosotros__horno row">
+			<div class="nosotros__foto horno__foto img-fluid d-flex justify-content-center col-sm-12 col-md-6 col-lg-5">
+				<img src="media/horno2.jpeg" class="img-fluid" alt="horno">
+			</div>
+			<div class="nosotros__texto col-sm-12 col-md-6 col-lg-5 pt-5">
+				<p>Con seis metros de diámetro, nuestro <strong>horno</strong> de mampostería construido en 1911, uno de los más antiguos de Buenos Aires. </p> 
+				<p>Cuenta con la excepcional virtud de ser calentado exclusivamente a <strong>leña</strong>, permitiendo una cocción a temperatura decreciente (de 260 a 200º C) más <strong>suave</strong> que la provista por cualquier otro combustible.</p>
+				<p>Día a día nuestros experimentados pasteleros ponen al horno toda su <strong>dedicación y esfuerzo</strong> que combinada con la mejor atención, es la fórmula perfecta para entregar un <strong>excelente producto</strong>.</p>
+			</div>
+		</div>
+	</div>
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
-				<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="mb-3"><img style="width: 80px; height: 80px;" src="media/logo-transparente.png" alt="logo"></div>
+				<em>El secreto para lograr la <strong>calidad</strong>, la <strong>frescura</strong> y el <strong>sabor</strong> inigualable de los productos que elaboramos responde a un arte, que se transmite de generación en generación y se basa en la <strong>pasión por lo que hacemos</strong>.</em>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
-				<p>panaderiaideal@gmail.com</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal I</h5>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal II</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Contacto</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
+					<p>panaderiaideal@hotmail.com</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
+					<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
-				<p>(011) 7396-9100</p>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
-				<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
-			</div>
+			
+			
+			<div class="col-12 bg-light mt-4">© Creado con ♥ por <a href="#">Studio Casz</a></div>
 		</div>
     </footer>
 

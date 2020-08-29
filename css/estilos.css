@@ -6,38 +6,260 @@
 header {
   font-family: "Bebas Neue", cursive;
   font-size: 1.2rem; }
-  header .dropdown-menu {
-    font-size: 1.1rem; }
-
-.dropdown:hover > .dropdown-menu {
-  display: block; }
 
 .main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 150px 0 0 0; }
-  .main .texto img {
-    width: 100%; }
-  .main .fotoinicio img {
-    border-radius: 30px 30px 30px 30px; }
+  padding: 120px 0 0 0;
+  font-family: "Open Sans", sans-serif; }
+  .main .index__1 {
+    background-image: url("../media/fondos/1.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end; }
+    .main .index__1 .texto-principal {
+      font-family: 'Pacifico', cursive;
+      color: white;
+      width: 60%;
+      text-align: center;
+      padding: 20px 0 20px 0; }
+
+.index__2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px 0 20px 0; }
+  .index__2 .productos-destacados {
+    display: flex;
+    justify-content: center; }
+    .index__2 .productos-destacados .productos-destacados__bombones {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/bombones.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .index__2 .productos-destacados .productos-destacados__medialunas {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/medialunas5.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .index__2 .productos-destacados .productos-destacados__sandwiches {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/sandwiches2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .index__2 .productos-destacados .productos-destacados__palmeritas {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/palmeritas.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .index__2 .productos-destacados .productos-destacados__pan {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/pan3.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .index__2 .productos-destacados .productos-destacados__torta {
+      margin: 20px;
+      border-radius: 200px;
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      background-image: url(../media/Tortas.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+
+.transparencia:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+  overflow: hidden; }
+
+@media (max-width: 576px) {
+  .texto-principal {
+    font-size: 3rem;
+    align-self: center;
+    color: grey; } }
+
+@media (min-width: 576px) {
+  .texto-principal {
+    font-size: 3.5rem; } }
+
+@media (min-width: 768px) {
+  .texto-principal {
+    font-size: 4rem; } }
+
+@media (min-width: 992px) {
+  .texto-principal {
+    font-size: 5rem; } }
+
+@media (min-width: 1200px) {
+  .texto-principal {
+    font-size: 6rem; } }
+
+.harina {
+  background-image: url("../media/harina.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive; }
+
+.horno {
+  background-image: url("../media/horno.jpeg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive; }
+
+.inicio-texto-separador {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3rem;
+  text-align: center; }
+
+hr {
+  border: 2px solid khaki;
+  height: 2px;
+  width: 100%;
+  background-color: darkkhaki; }
+
+.promo-medialunas {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  align-items: center;
+  height: 200px;
+  background-image: url(../media/medialunas3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.promo-porcion {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  align-items: center;
+  height: 200px;
+  background-image: url(../media/tiramisu.png);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.promo-bombones {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  align-items: center;
+  height: 200px;
+  background-image: url(../media/bombones2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.loquenosdiferencia {
+  font-size: 1.2rem; }
+
+.diferencia {
+  filter: grayscale(0.9);
+  padding: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+  .diferencia div {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center; }
+    .diferencia div p {
+      width: 80px; }
+
+.diferencia:hover {
+  color: #FDD54F;
+  filter: none; }
+  .diferencia:hover div {
+    border: 1px solid #FDD54F; }
+
+.fondopanes {
+  background-image: url("../media/fondo-panes.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2.2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pacifico', cursive; }
 
 footer {
   margin-top: 30px;
   background-color: #FDD54F;
-  padding: 30px 80px 30px 80px;
+  padding: 30px 0 30px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center; }
   footer #footer__item {
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-items: l;
+    text-align: left;
+    justify-items: left; }
     footer #footer__item div {
-      margin-right: 5px; }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-items: left; }
 
 h1 {
   color: #03989E;
@@ -45,24 +267,8 @@ h1 {
   font-size: 1.6rem;
   margin-bottom: 20px; }
 
-.galeria {
-  margin: 30px 0 30px 0; }
-  .galeria .galeria__item .galeria__item__titulo {
-    margin: 10px 0 10px 0;
-    padding: 0 10px 0 10px;
-    background-color: #FDD54F;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
-    height: 4rem;
-    text-align: center; }
-    .galeria .galeria__item .galeria__item__titulo a {
-      font-family: "Londrina Outline", cursive;
-      font-size: 1.5rem; }
-  .galeria .galeria__item .galeria__item__foto {
-    margin-bottom: 10px;
-    width: 100%;
-    height: 250px; }
+h5 {
+  color: #03989E; }
 
 .productos div {
   display: flex;
@@ -100,9 +306,17 @@ h1 {
   width: 100%;
   border-radius: 30px 30px 30px 30px; }
 
+.nosotros .horno__foto img {
+  height: 400px;
+  width: 300px;
+  margin-bottom: 20px; }
+
+.nosotros__horno {
+  padding-top: 20px; }
+
 .contacto .sucursal {
   margin: 20px 0 20px 0; }
-  .contacto .sucursal .nombre {
+  .contacto .sucursal .sucursal__nombre {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-family: "Bebas Neue", cursive;
@@ -111,11 +325,18 @@ h1 {
     font-weight: bolder;
     font-size: 2.4rem;
     text-align: right;
-    width: 3.5rem;
+    width: 10%;
     padding-top: 10px; }
-  .contacto .sucursal .datossucursal {
+  .contacto .sucursal .sucursal__datos {
     width: 80%;
     margin-left: 20px; }
+
+.contacto .formulario-contacto {
+  background-color: #03989E;
+  padding: 5px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem; }
 
 .novedades {
   font-family: "Open Sans", sans-serif; }

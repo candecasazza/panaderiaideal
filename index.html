@@ -9,6 +9,8 @@
     <link rel="icon" href="media/logo-solo-transparente.png" type="image/png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Outline&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link rel="stylesheet" href="css/estilos.css" type="text/css">
 </head>
 <body>
@@ -28,21 +30,8 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown">Productos</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item"  href="productos.html">Ver todos</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#facturas">Facturas</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#panaderia">Panadería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#pasteleria">Pastelería</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#salados">Salados</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="productos.html#sandwiches">Sandwiches de Miga</a>
-						</div>
+					<li class="nav-item">
+						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -60,83 +49,167 @@
 	</header>
 	
 	<div class="container-fluid">
-		<section class="main">
-			<div class="row">
-				<div class="texto col-lg-6 col-md-12 col-sm-12">
-					<img class="img-fluid" src="media/bienvenido.png" style="width: 100%; max-width: 500px;" alt="bienvenido">
-				</div>
-				<div class="fotoinicio col-lg-6 col-md-12 col-sm-12">
-					<img class="img-fluid" src="media/fotoinicio.jpeg" style="width: 100%; max-width: 500px;" alt="pan">
+		<div class="main row">
+			<div class="col-12 index__1" style="height: 100%;">
+				<div class="texto-principal display-1">
+					<p class="animate__animated animate__flipInX">¡Bienvenido</p>
+					<p class="animate__animated animate__flipInX">a tu</p>
+					<p class="animate__animated animate__flipInX">Panadería!</p>
 				</div>
 			</div>
-		</section>
+			
+		</div>
 	</div>
 
 	<div class="container-fluid">
-		<div class="row galeria">
-			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
-				<div class="galeria__item__titulo">
-					¡No te pierdas nuestras <a href="novedades.html" class="alert-link">Novedades</a>!
+		<div class="row">
+			<div class="index__2 col-12 mx-auto">
+				<p class="inicio-texto-separador">Los productos más frescos, elaborados con la mejor calidad.</p>
+				<hr>
+				<div class="productos-destacados row">
+					<div class="productos-destacados__bombones transparencia col-sm-12 col-md-5 col-lg-3"></div>
+					<div class="productos-destacados__medialunas transparencia col-sm-12 col-md-5 col-lg-3"></div>
+					<div class="productos-destacados__sandwiches transparencia col-sm-12 col-md-5 col-lg-3"></div>
+					<div class="productos-destacados__palmeritas transparencia col-sm-12 col-md-5 col-lg-3"></div>
+					<div class="productos-destacados__pan transparencia col-sm-12 col-md-5 col-lg-3"></div>
+					<div class="productos-destacados__torta transparencia col-sm-12 col-md-5 col-lg-3"></div>
 				</div>
-
-				<div class="galeria__item__foto">
-					<img src="media/galeria/sandwiches.png" class="d-block w-100 h-100" alt="galeria">
-				</div>
-				<div class="galeria__item__foto">
-					<img src="media/galeria/pan1.jpg" class="d-block w-100 h-100" alt="galeria">
-				</div>
-					
+				<a class="btn btn-primary my-3" href="productos.html" role="button">Ver más productos</a>
 			</div>
+		</div>
+	</div>
 
-			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
-				<div class="galeria__item__titulo">
-					Mirá todos los <a href="productos.html" class="alert-link">Productos</a> que tenemos para vos.
+	<div class="container-fluid">
+		<div class="row">
+			<div class="harina col-12">
+				<div style="width: 400px;">
+					<p class="d-flex justify-content-start">Más de 60 años...</p>
+					<p class="d-flex justify-content-end">...Creando historias</p>
 				</div>
-
-				<div class="galeria__item__foto">
-					<img src="media/galeria/torta.jpg" class="d-block w-100 h-100" alt="galeria">
-				</div>
-				<div class="galeria__item__foto">
-					<img src="media/galeria/cookies.jpg" class="d-block w-100 h-100" alt="galeria">
-				</div>
-					
 			</div>
+		</div>
+	</div>
 
-			<div class="galeria__item col-lg-4 col-md-12 col-sm-12">
-				<div class="galeria__item__titulo">
-					Más de 60 años brindando sabor y calidad en Zona Sur. <a href="contacto.html" class="alert-link">¡Visitanos!</a>
-				</div>
-
-				<div class="galeria__item__foto">
-					<img src="media/galeria/street1.JPG" class="d-block w-100 h-100" alt="galeria">
-				</div>
-				<div class="galeria__item__foto">
-					<img src="media/galeria/street2.JPG" class="d-block w-100 h-100" alt="galeria">
-				</div>
-				
+	<div class="container-fluid">
+		<div class="row mx-auto">
+			<div class="col-12 text-center mx-auto mt-3">
+				<p class="inicio-texto-separador">¡Nuestras promos hechas para vos!</p>
+				<hr>
 			</div>
+			<div class="col-sm-12 col-md-11 col-lg-10 text-center promo-medialunas mt-2">
+				<div class="display-4 text-white p-3" style="width: auto;"><p>Promo</p> <p>Medialunas</p></div>
+				<div style="width: auto;" class="ml-4 d-flex justify-content-start">
+					<a class="btn btn-light my-auto mx-left" href="novedades.html" role="button">+</a>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-11 col-lg-10 text-center promo-porcion mt-2">
+				<div class="display-4 text-white p-3" style="width: auto;"><p>Porciones</p> <p>de torta</p></div>
+				<div style="width: auto;" class="ml-4 d-flex justify-content-start">
+					<a class="btn btn-light my-auto mx-left" href="novedades.html" role="button">+</a>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-11 col-lg-10 text-center promo-bombones mt-2">
+				<div class="display-4 text-white p-3" style="width: auto;"><p>Bombones</p> <p>Artesanales</p></div>
+				<div style="width: auto;" class="ml-4 d-flex justify-content-start">
+					<a class="btn btn-light my-auto mx-left" href="novedades.html" role="button">+</a>
+				</div>
+			</div>
+			<div class="col-12 mx-auto text-center">
+				<a class="btn btn-primary my-3 mx-auto" ref="novedades.html" role="button">Ver más novedades</a>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="horno col-12">
+				<div style="width: 400px;">
+					<p class="d-flex justify-content-start">Conocé...</p>
+					<p class="d-flex justify-content-end">...Nuestros clásicos</p>
+				</div>
+			</div>
+			<div class="col-12 text-center mt-3">
+				<p class="inicio-texto-separador">Lo que nos diferencia...</p>
+				<hr>
+			</div>
+			<div class="loquenosdiferencia row col-12 my-4">
+				<div class="col-sm-4 col-md-4 col-lg-4 diferencia mx-auto m-3">
+					<div class="text-center align-middle mx-auto" style="height: 250px; width: 250px;">
+						<p class="text-center mx-auto" style="width: 80%;">Panadería Artesanal</p>
+						<img src="media/iconos/inicio-pan.png" class="mx-auto" style="width: 50px;" alt="icono">
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 diferencia mx-auto m-3">
+					<div class="text-center align-middle mx-auto" style="height: 250px; width: 250px;">
+						<p class="text-center mx-auto" style="width: 80%;">Horno a Leña</p>
+						<img src="media/iconos/inicio-fuego.png" class="mx-auto" style="width: 50px;" alt="icono">
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 diferencia mx-auto m-3">
+					<div class="text-center align-middle mx-auto" style="height: 250px; width: 250px;">
+						<p class="text-center mx-auto" style="width: 80%;">Fermentación Natural</p>
+						<img src="media/iconos/inicio-trigo.png" class="mx-auto" style="width: 50px;" alt="icono">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="fondopanes col-12">
+				<div style="width: 400px;">
+					<p class="d-flex justify-content-start">Pequeños Detalles,</p>
+					<p class="d-flex justify-content-end">Grandes Diferencias.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
     <footer class="container-fluid">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
-				<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="mb-3"><img style="width: 80px; height: 80px;" src="media/logo-transparente.png" alt="logo"></div>
+				<em>El secreto para lograr la <strong>calidad</strong>, la <strong>frescura</strong> y el <strong>sabor</strong> inigualable de los productos que elaboramos responde a un arte, que se transmite de generación en generación y se basa en la <strong>pasión por lo que hacemos</strong>.</em>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
-				<p>panaderiaideal@gmail.com</p>
+			<div class="col-lg-6 col-md-12 col-sm-12 px-5 py-3" id="footer__item">
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal I</h5>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Sucursal II</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-place.png" alt="place" style="width: 20px; height: 20px;"></div>
+					<p>J. D. Perón 2436, Valentín Alsina, Lanús.</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
+					<p>(011) 7396-9100</p>
+				</div>
+				<div class="d-flex justify-content-start">
+					<h5>Contacto</h5>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-mail.png" alt="mail" style="width: 20px; height: 20px;"></div>
+					<p>panaderiaideal@hotmail.com</p>
+				</div>
+				<div>
+					<div class="mr-2"><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
+					<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-phone.png" alt="phone" style="width: 20px; height: 20px;"></div>
-				<p>(011) 7396-9100</p>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" id="footer__item">
-				<div><img src="media/iconos/icon-clock.png" alt="clock" style="width: 20px; height: 20px;"></div>
-				<p>Martes a Domingos de 7:30 a 20:30 hs.</p>
-			</div>
+			
+			
+			<div class="col-12 bg-light mt-4">© Creado con ♥ por <a href="#">Studio Casz</a></div>
 		</div>
     </footer>
 
